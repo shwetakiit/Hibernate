@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+
+<!DOCTYPE hibernate-configuration SYSTEM 
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory>
+    
+    <property name="hibernate.dialect">org.hibernate.dialect.Oracle12cDialect</property>
+    <property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+    <property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521:orcl</property>
+    <property name="hibernate.connection.username">hibernateusr</property>
+    <property name="hibernate.connection.password">hibernateusr</property>
+    <property name="hibernate.hbm2ddl.auto">create</property>
+    <property name="hibernate.show_sql">true</property>
+    <property name="hibernate.format_sql">false</property>
+    <!-- 
+   <property name="hibernate.connection.provider_class">org.hibernate.connection.C3P0ConnectionProvider</property>
+   <property name="hibernate.c3p0.min_size">5</property>
+    <property name="hibernate.c3p0.max_size">20</property>
+    <property name="hibernate.c3p0.timeout">300</property>
+    <property name="hibernate.c3p0.max_statements">50</property>
+    <property name="hibernate.c3p0.idle_test_period">3000</property> -->
+    
+   <mapping class="com.hibernate.hibernatepractice.VehicleDTO" />
+   <mapping class="com.hibernate.hibernatepractice.TwoWheelerDTO" />
+   <mapping class="com.hibernate.hibernatepractice.FourWheelerDTO" /> 
+   
+   <mapping class="kumari.shweta.dto.UserDTO"></mapping>
+   <mapping class="kumari.shweta.dto.ImmutableEntity" />
+   
+   
+   
+   <!--<mapping class="com.hibernate.Inheritance.Vehicle" />
+   <mapping class="com.hibernate.Inheritance.TwoWheeler" />
+   <mapping class="com.hibernate.Inheritance.FourWheeler" /> -->
+   <!--  
+   <mapping class = "com.hibernate.mapping.AddressDTO" />
+   <mapping class = "com.hibernate.mapping.EmployeeDTO" />
+   <mapping class = "com.hibernate.OneToManyMapping.UserDTO" />
+   <mapping class = "com.hibernate.OneToManyMapping.VehicleDTO" />
+   
+   -->   
+ 
+</session-factory>
+
+</hibernate-configuration>
