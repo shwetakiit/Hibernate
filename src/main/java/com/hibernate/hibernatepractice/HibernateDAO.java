@@ -3,8 +3,6 @@
  */
 package com.hibernate.hibernatepractice;
 
-
-
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
@@ -35,7 +33,6 @@ public class HibernateDAO<T> {
 	public static <T> HibernateDAO<T> getDAO(Class<T> elemClass) {
 		return new HibernateDAO<T>(elemClass);
 	}
-	
 	
 	public T save(T entity) {
 		Transaction tx = null;

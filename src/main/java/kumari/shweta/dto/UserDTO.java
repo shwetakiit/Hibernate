@@ -35,6 +35,11 @@ public class UserDTO {
 	public void setUserName(String userName) {
 		this.userName = userName;
 	}
+
+	@Override
+	public String toString() {
+		return "UserDTO [userId=" + userId + ", userName=" + userName + "]";
+	}
 	
 	
 }

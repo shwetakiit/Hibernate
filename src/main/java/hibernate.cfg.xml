@@ -28,6 +28,8 @@
    
    <mapping class="kumari.shweta.dto.UserDTO"></mapping>
    <mapping class="kumari.shweta.dto.ImmutableEntity" />
+   <mapping class="kumari.shweta.dto.HouseDTO" />
+   <mapping class="kumari.shweta.dto.PersonDTO" />
    
    
    
