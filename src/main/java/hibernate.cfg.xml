@@ -11,7 +11,7 @@
     <property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521:orcl</property>
     <property name="hibernate.connection.username">hibernateusr</property>
     <property name="hibernate.connection.password">hibernateusr</property>
-    <property name="hibernate.hbm2ddl.auto">create</property>
+    <property name="hibernate.hbm2ddl.auto">update</property>
     <property name="hibernate.show_sql">true</property>
     <property name="hibernate.format_sql">false</property>
     <!-- 
@@ -30,7 +30,7 @@
    <mapping class="kumari.shweta.dto.ImmutableEntity" />
    <mapping class="kumari.shweta.dto.HouseDTO" />
    <mapping class="kumari.shweta.dto.PersonDTO" />
-   
+   <mapping class="kumari.shweta.dto.VersioningDTO" />
    
    
    <!--<mapping class="com.hibernate.Inheritance.Vehicle" />
